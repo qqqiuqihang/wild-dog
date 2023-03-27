@@ -1,12 +1,12 @@
 {
-  "name": "@wild-dog/tools",
+  "name": "@qqqiuqihang/wild-dog",
   "repository": {
     "type": "git",
     "url": "https://github.com/qqqiuqihang/wild-dog.git"
   },
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@qqqiuqihang"
   },
   "scripts": {
     "serve": "vue-cli-service serve",
