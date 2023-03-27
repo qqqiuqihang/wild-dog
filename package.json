@@ -1,0 +1,76 @@
+{
+  "name": "wild-dog",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qqqiuqihang/wild-dog.git"
+  },
+  "version": "0.1.2", 
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name WildDog --dest lib ./package/wild-dog/index.js",
+    "release": "standard-version && git push --follow-tags && npm publish"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.19",
+    "@vue/cli-plugin-eslint": "~4.5.19",
+    "@vue/cli-plugin-router": "~4.5.19",
+    "@vue/cli-service": "~4.5.19",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "prettier": "^2.2.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "standard-version": "^9.5.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "peerDependencies": {
+    "element-ui": "^2.15.13",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "description": "一个工具可以方便工作",
+  "bugs": {
+    "url": "https://github.com/qqqiuqihang/wild-dog/issues"
+  },
+  "homepage": "https://github.com/qqqiuqihang/wild-dog#readme",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "tool"
+  ],
+  "author": "qqh",
+  "license": "MIT"
+}
