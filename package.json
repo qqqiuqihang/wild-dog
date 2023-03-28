@@ -1,10 +1,10 @@
 {
-  "name": "@qqqiuqihang/wild-dog",
+  "name": "@qqqiuqihang/wild-dog-util",
   "repository": {
     "type": "git",
     "url": "https://github.com/qqqiuqihang/wild-dog.git"
   },
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@qqqiuqihang"
   },
@@ -13,7 +13,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name WildDog --dest lib ./package/wild-dog/index.js",
-    "release": "standard-version && git push --follow-tags && npm publish"
+    "release": "git pull && standard-version && git push --follow-tags && npm publish"
   },
   "dependencies": {
     "core-js": "^3.6.5"
