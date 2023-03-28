@@ -18,7 +18,8 @@ export const withInstall = (main, extra) => {
 export const withInstallFunction = (fn, name) => {
   fn.install = (app) => {
     fn._context = app._context;
-    app.config.globalProperties[name] = fn;
+    // app.config.globalProperties[name] = fn;
+    app.prototype[name] = fn;
   };
 
   return fn;

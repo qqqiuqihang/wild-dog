@@ -6,16 +6,16 @@ function resolve(dir) {
 module.exports = {
   lintOnSave: false,
 
-  chainWebpack: (config) => {
-    //   config.resolve.alias.set("@/", resolve("./src")).set("@WildDog/", resolve("./package")).set("WildDog/", resolve("./package/wild-dog"));
-    //   //set第一个参数：设置的别名，第二个参数：设置的路径
-    // config.module
-    //   .rule("js")
-    //   .include.add("/package")
-    //   .end()
-    //   .use("babel")
-    //   .loader("babel-loader");
-  },
+  // chainWebpack: (config) => {
+  //   config.resolve.alias.set("@/", resolve("./src")).set("@WildDog/", resolve("./package")).set("WildDog/", resolve("./package/wild-dog"));
+  //   //set第一个参数：设置的别名，第二个参数：设置的路径
+  // config.module
+  //   .rule("js")
+  //   .include.add("/package")
+  //   .end()
+  //   .use("babel")
+  //   .loader("babel-loader");
+  // },
 
   configureWebpack: {
     resolve: {
