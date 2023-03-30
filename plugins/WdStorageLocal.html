@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WdStorageLocal | Wild-Dog</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/wild-dog/assets/img/logo.png">
+    <meta name="description" content="A Tool Library for vue2">
+    
+    <link rel="preload" href="/wild-dog/assets/css/0.styles.ff0ed4ad.css" as="style"><link rel="preload" href="/wild-dog/assets/js/app.34cad81e.js" as="script"><link rel="preload" href="/wild-dog/assets/js/2.782f4c66.js" as="script"><link rel="preload" href="/wild-dog/assets/js/14.1dcf342c.js" as="script"><link rel="prefetch" href="/wild-dog/assets/js/10.ef018ec0.js"><link rel="prefetch" href="/wild-dog/assets/js/11.c23d9ac5.js"><link rel="prefetch" href="/wild-dog/assets/js/12.b99edcc0.js"><link rel="prefetch" href="/wild-dog/assets/js/13.f80244a4.js"><link rel="prefetch" href="/wild-dog/assets/js/15.4b8e21bb.js"><link rel="prefetch" href="/wild-dog/assets/js/16.64a5e832.js"><link rel="prefetch" href="/wild-dog/assets/js/3.782857b7.js"><link rel="prefetch" href="/wild-dog/assets/js/4.179e9b9d.js"><link rel="prefetch" href="/wild-dog/assets/js/5.ed28343e.js"><link rel="prefetch" href="/wild-dog/assets/js/6.3b5950e6.js"><link rel="prefetch" href="/wild-dog/assets/js/7.fa0e95ae.js"><link rel="prefetch" href="/wild-dog/assets/js/8.8d7f9640.js"><link rel="prefetch" href="/wild-dog/assets/js/9.6020f3b2.js">
+    <link rel="stylesheet" href="/wild-dog/assets/css/0.styles.ff0ed4ad.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/wild-dog/" class="home-link router-link-active"><img src="/wild-dog/assets/img/logo.png" alt="Wild-Dog" class="logo"> <span class="site-name can-hide">Wild-Dog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/wild-dog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wild-dog/components/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/wild-dog/plugins/" class="nav-link router-link-active">
+  方法
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/wild-dog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/wild-dog/components/" class="nav-link">
+  组件
+</a></div><div class="nav-item"><a href="/wild-dog/plugins/" class="nav-link router-link-active">
+  方法
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>缓存</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/wild-dog/plugins/WdCookie.html" class="sidebar-link">WdCookie</a></li><li><a href="/wild-dog/plugins/WdStorageLocal.html" aria-current="page" class="active sidebar-link">WdStorageLocal</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/wild-dog/plugins/WdStorageLocal.html#setitem" class="sidebar-link">setItem</a></li><li class="sidebar-sub-header"><a href="/wild-dog/plugins/WdStorageLocal.html#getitem" class="sidebar-link">getItem</a></li><li class="sidebar-sub-header"><a href="/wild-dog/plugins/WdStorageLocal.html#removeitem" class="sidebar-link">removeItem</a></li><li class="sidebar-sub-header"><a href="/wild-dog/plugins/WdStorageLocal.html#clear" class="sidebar-link">clear</a></li></ul></li><li><a href="/wild-dog/plugins/WdStorageSession.html" class="sidebar-link">WdStorageSession</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>生成uuid</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="wdstoragelocal"><a href="#wdstoragelocal" class="header-anchor">#</a> WdStorageLocal</h1> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>这是一个存储在浏览器缓存里的方法，可以永久存储在浏览器中，手动清除</p> <p>未传入信息，默认返回 false</p></div> <p>通过以下方式导入</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> WdStorageLocal <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;WildDog&quot;</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="setitem"><a href="#setitem" class="header-anchor">#</a> setItem</h2> <p>WdStorageLocal.setItem(key, value)</p> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th></tr></thead> <tbody><tr><td>key</td> <td>用来保存信息的唯一值，也用来获取对应值</td> <td>string</td> <td>-</td> <td>-</td></tr> <tr><td>value</td> <td>需要保存的信息</td> <td>any</td> <td>-</td> <td>-</td></tr></tbody></table> <h2 id="getitem"><a href="#getitem" class="header-anchor">#</a> getItem</h2> <p>WdStorageLocal.setItem(key)</p> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th></tr></thead> <tbody><tr><td>key</td> <td>获取对应 key 的值</td> <td>string</td> <td>-</td> <td>-</td></tr></tbody></table> <h2 id="removeitem"><a href="#removeitem" class="header-anchor">#</a> removeItem</h2> <p>WdStorageLocal.setItem(key)</p> <table><thead><tr><th>参数</th> <th>说明</th> <th>类型</th> <th>可选值</th> <th>默认值</th></tr></thead> <tbody><tr><td>key</td> <td>移除对应 key 的值</td> <td>string</td> <td>-</td> <td>-</td></tr></tbody></table> <h2 id="clear"><a href="#clear" class="header-anchor">#</a> clear</h2> <p>WdStorageLocal.setItem( )</p> <p>清除所有本地 localStorage 缓存</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/wild-dog/plugins/WdCookie.html" class="prev">
+        WdCookie
+      </a></span> <span class="next"><a href="/wild-dog/plugins/WdStorageSession.html">
+        WdStorageSession
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/wild-dog/assets/js/app.34cad81e.js" defer></script><script src="/wild-dog/assets/js/2.782f4c66.js" defer></script><script src="/wild-dog/assets/js/14.1dcf342c.js" defer></script>
+  </body>
+</html>
