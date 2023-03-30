@@ -1,4 +1,1 @@
-module.exports = [
-  ["link", { rel: "icon", href: "/logo.png" }],
-  // ["link", { rel: "icon", href: "/logo.png" }],
-];
+module.exports = [["link", { rel: "icon", href: "/assets/img/logo.png" }]];
