@@ -1,5 +1,6 @@
 import installer from "./defaults";
 export * from "../components";
+export * from "../plugins";
 // export * from "../constants";
 // export * from "../directives";
 // export * from "../hooks";
