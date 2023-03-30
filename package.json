@@ -15,7 +15,8 @@
     "lib": "vue-cli-service build --target lib --name WildDog --dest lib ./package/wild-dog/index.js",
     "release": "git pull && standard-version && git push --follow-tags && npm publish",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5"

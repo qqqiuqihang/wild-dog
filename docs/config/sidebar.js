@@ -8,7 +8,15 @@ module.exports = {
   "/plugins/": [
     {
       title: "缓存",
-      children: [{ title: "localStorage", path: "/plugins/localStorage" }],
+      children: [
+        { title: "WdCookie", path: "/plugins/WdCookie" },
+        { title: "WdStorageLocal", path: "/plugins/WdStorageLocal" },
+        { title: "WdStorageSession", path: "/plugins/WdStorageSession" },
+      ],
+    },
+    {
+      title: "生成uuid",
+      children: [{ title: "WdGenerateUUID", path: "/plugins/WdGenerateUUID" }],
     },
   ],
 };

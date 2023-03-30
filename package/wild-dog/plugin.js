@@ -1,3 +1,3 @@
-import { WdCookie, WdStorageLocal, WdStorageSession } from "../plugins/index";
+import { WdCookie, WdStorageLocal, WdStorageSession, WdGenerateUUID } from "../plugins/index";
 
-export default [WdCookie, WdStorageLocal, WdStorageSession];
+export default [WdCookie, WdStorageLocal, WdStorageSession, WdGenerateUUID];

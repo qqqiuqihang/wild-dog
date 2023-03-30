@@ -4,7 +4,7 @@ const sidebar = require("../config/sidebar");
 const path = require("path");
 
 module.exports = {
-  base: "/",
+  base: "/wild-dog/",
   host: "0.0.0.0",
   port: "3000",
   title: "Wild-Dog",
