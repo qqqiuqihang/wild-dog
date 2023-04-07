@@ -4,9 +4,10 @@
 name: Node.js Package
 
 on:
-  #  release:
-  #    types: [created, edit]
-  label: types:[created, edit]
+  label:
+    - [created, edit]
+  release:
+    types: [created, edit]
 
 jobs:
   build:
