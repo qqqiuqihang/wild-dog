@@ -7,9 +7,9 @@ on:
   label:
     types:
       - [created, edit]
-  release:
-    types:
-      - [created, edit]
+#  release:
+#    types:
+#     - [created, edit]
 
 jobs:
   build:
