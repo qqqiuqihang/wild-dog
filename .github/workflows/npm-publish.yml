@@ -6,7 +6,7 @@ name: Node.js Package
 on:
   label:
     types:
-      - [created, edit]
+      - created
 #  release:
 #    types:
 #     - [created, edit]
