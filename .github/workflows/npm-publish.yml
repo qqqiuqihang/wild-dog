@@ -4,12 +4,12 @@
 name: Node.js Package
 
 on:
-  label:
+  push:
+    branches:
+      - main
+  release:
     types:
-      - created
-#  release:
-#    types:
-#     - [created, edit]
+      - [created, edit]
 
 jobs:
   build:
