@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/qqqiuqihang/wild-dog.git"
   },
-  "version": "0.1.2",
+  "version": "0.1.0",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@qqqiuqihang"
   },
