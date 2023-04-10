@@ -1,25 +1,10 @@
 {
   "name": "@qqqiuqihang/wild-dog-util",
-  "version": "0.1.0",
-  "description": "一个工具可以方便工作",
-  "main": "lib/your-package-name.umd.js",
-  "module": "lib/your-package-name.esm.js",
-  "files": [
-    "lib/**/*"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/qqqiuqihang/wild-dog.git"
   },
-  "keywords": [
-    "tool"
-  ],
-  "author": "qqh",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/qqqiuqihang/wild-dog/issues"
-  },
-  "homepage": "https://github.com/qqqiuqihang/wild-dog#readme",
+  "version": "0.1.0",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@qqqiuqihang"
   },
@@ -31,8 +16,7 @@
     "release": "git pull && standard-version && git push --follow-tags && npm publish",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh",
-    "rollup-build": "rollup -c"
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5"
@@ -49,9 +33,6 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^2.2.1",
-    "rollup": "^2.79.1",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-vue": "^6.0.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "standard-version": "^9.5.0",
@@ -83,7 +64,18 @@
     "last 2 versions",
     "not dead"
   ],
+  "description": "一个工具可以方便工作",
+  "bugs": {
+    "url": "https://github.com/qqqiuqihang/wild-dog/issues"
+  },
+  "homepage": "https://github.com/qqqiuqihang/wild-dog#readme",
+  "main": "package/wild-dog",
   "directories": {
     "lib": "lib"
-  }
+  },
+  "keywords": [
+    "tool"
+  ],
+  "author": "qqh",
+  "license": "MIT"
 }
